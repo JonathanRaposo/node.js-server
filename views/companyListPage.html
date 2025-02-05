@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of companies</title>
+    <link rel="stylesheet" href="/static_files/css/styles.css">
+
+</head>
+<body class="dark-bg">
+    <nav>
+        <form action="/companies/search" id="search-form">
+            <input type="text" name="q" placeholder="Search Company">
+            <button type="submit">Search</button>
+        </form>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/companies">Companies</a>
+            </li>
+            <li>
+                <a href="/companies/add">Add Company</a>
+            </li>
+        </ul>
+    </nav>
+
+       <div id="company-list">
+         <h2>{{heading}}</h2>
+           <ul>
+             {{companies}}
+           </ul>
+       </div>
+   
+
+</body>
+</html>

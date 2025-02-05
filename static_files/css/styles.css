@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', serif;
+    text-transform: uppercase;
+}
+h1, h2,h3{
+    text-align: center;
+   
+}
+button, input ,textarea{
+    font: inherit;
+    text-transform: inherit;
+}
+
+/* addCompany form styles */
+#addCompany-form, #update-form{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    margin: 200px auto;
+    box-shadow: 1px 2px 4px 5px #cccc;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+#addCompany-form input,
+#update-form input {
+    width: 200px;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    padding: 4px 8px;
+    outline: none;
+}
+#addCompany-form textarea,
+#update-form textarea{
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    padding: 4px 8px;
+    outline: none;
+}
+#addCompany-form button,
+#update-form button 
+{
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-weight: 600;
+    background-color: #440bad;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+#addCompany-form button:hover{
+    background-color: #4b1aa5;
+}
+#update-form button:hover{
+    background-color: #4b1aa5;
+}
+
+/* nav bar styles */
+nav, .secondary-layout {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+
+nav ul, .secondary-layout ul{
+    margin-right:20px;
+    padding-left: 0px;
+}
+nav ul li, .secondary-layout ul li{
+    display: inline-block;
+    width:170px;
+    font-weight: 600;
+    padding:8px;
+    text-align: center;
+    transition: letter-spacing 0.5s
+}
+nav ul li a, .secondary-layout ul li a{
+    color:#000;
+}
+nav ul li:hover{
+    letter-spacing: 2px;
+}
+.secondary-layout ul li:hover{
+    letter-spacing: 2px;
+}
+nav form , .secondary-layout form {
+    padding-left: 20px;
+}
+nav form input , .secondary-layout form input{
+    padding: 4px 8px;
+    min-width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+nav form button, .secondary-layout form button{
+    margin-left: 8px;
+    padding: 2px 8px;
+    background-color: #440bad;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.secondary-layout {
+    background-image: url('/static_files/images/darkbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.secondary-layout ul li a {
+    color: #fff;
+}
+/* Home page styles */
+#homePage-bg, .dark-bg{
+    width:100%;
+    height: 100vh;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+#homePage-bg{
+    background-image: url('/static_files/images/fiber-optic.jpg');
+}
+.dark-bg{
+    background-image: url('/static_files/images/darkbg.jpg');
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+/* profile page styles */
+#company-info{
+    width: 700px;
+    margin: 200px auto;
+   
+}
+#company-info #compEmail{
+    color: #fff;
+    transition: text-decoration 0.5s
+}
+#company-info #compEmail:hover{
+   text-decoration: underline;
+}
+ #company-info >form >button{
+    display:block;
+    margin: auto;
+    padding: 0px 6px;
+    background-color:  #ea272780;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+ 
+}
+#company-info >form >button:hover{
+    background-color: #ff0000e3;
+}
+/* company list page styles */
+#company-list{
+    width: 700px;
+    margin: 200px auto;
+   
+}
+#company-list ul{
+   list-style: none;
+   padding-left: 0px;
+   width: 200px;
+   margin: 16px auto;
+}
+#company-list ul li{
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+
+}
+#company-list ul li a{
+    color: #fff;
+    transition: color 0.5s;
+}
+#company-list ul li:hover a{
+    color: #ff0000e3;
+}
+
+/* Error Page styles */
+#ErrorPage-heading, #notFound-heading{
+    margin-top: 200px;
+}

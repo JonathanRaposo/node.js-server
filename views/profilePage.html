@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company profile</title>
+    <link rel="stylesheet" href="/static_files/css/styles.css">
+
+</head>
+<body class="dark-bg">
+    <nav>
+        <form action="/companies/search" id="search-form">
+            <input type="text" name="q" placeholder="Search Company">
+            <button type="submit">Search</button>
+        </form>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/companies/{{id}}/update">Update info</a>
+            </li>
+           
+        </ul>
+    </nav>
+
+     <div id="company-info">
+         <h1>{{name}}</h1>
+
+         <p>{{description}}</p>
+         <p><strong>Industry: </strong>{{industry}}</p>
+         <p><strong>Company email: </strong>{{email}}</p>
+
+         <form action="/companies/{{id}}/delete" method ="POST">
+            <button type="submit">Delete company</button>
+         </form>     
+        
+
+     </div>
+
+
+</body>
+</html>

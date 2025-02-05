@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static-files/images/blackhole.jpg"/>
+    <title>update company page</title>
+    <link rel="stylesheet" href="/static_files/css/styles.css">
+
+</head>
+<body>
+
+  <nav class="secondary-layout">
+    <form action="/companies/search" id="search-form">
+        <input type="text" name="q" placeholder="Search Company">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+         <li>
+             <a href="/">Home</a>
+         </li>
+         <li>
+             <a href="/companies">Companies</a>
+         </li>
+         <li>
+            <a href="/companies/add">Add Company</a>
+        </li>
+    </ul>
+</nav>
+ 
+
+     <form action="/companies/{{id}}/update" method="POST" id="update-form">
+       
+        <h2>Update Company</h2>
+       
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="{{name}}">
+      
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="25" rows="4"> {{description}}</textarea>
+      
+        <label for="industry">Industry</label>
+        <input type="text" id="industry" name="industry" value="{{industry}}">
+      
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" value="{{email}}">
+      
+        <button type="submit">Update</button>
+     </form>
+
+</body>
+   
+</html>
+
