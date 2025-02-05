@@ -7,11 +7,11 @@ const bodyParser = (req, res, callback) => {
     let body = '';
 
     req.on('data', (chunk) => {
-        console.log('*** Buffer.Raw data in hex values: ', chunk);
+        // console.log('*** Buffer.Raw data in hex values: ', chunk);
         body += chunk.toString();
     })
     req.on('end', () => {
-        console.log('body in the request:', body);
+        // console.log('body in the request:', body);
 
         let parsedBody;
 

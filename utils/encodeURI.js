@@ -1,7 +1,4 @@
 
-// const query = [['name', 'John Doe'], ['age', '40'], ['city', 'New York'], ['email', 'john123@gmail.com']]
-// const str = 'john Doe john123@gmail.com';
-
 function encodeURI(input) {
 
     const unreservedChar = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_.~';
