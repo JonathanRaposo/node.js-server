@@ -155,6 +155,9 @@ a{
     margin: 200px auto;
    
 }
+#company-info .description-para{
+    text-align: justify;
+}
 #company-info #compEmail{
     color: #fff;
     transition: text-decoration 0.5s
